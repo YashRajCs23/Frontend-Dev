@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="https://webhook.site/4263924d-8824-4438-948c-2059b4dde738" method="post">
+        <!-- First Name -->
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" required>
+        <br><br>
+
+        <!-- Last Name -->
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+
+        <!-- Course -->
+        <label for="courses">Courses:</label>
+        <select name="courses" id="courses" required>
+            <option value="">-- Select Course --</option>
+            <option value="btech">BTech</option>
+            <option value="bsc">B.S.C</option>
+        </select>
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" id="M" value="Male">
+        <label for="M">Male</label><br>
+        <input type="radio" name="gender" id="F" value="Female">
+        <label for="F">Female</label>
+        <br><br>
+
+        <!-- Subjects -->
+        <label>Choose Subjects:</label><br>
+        <input type="checkbox" name="opt[]" id="math" value="math">
+        <label for="math">Math</label><br>
+        <input type="checkbox" name="opt[]" id="english" value="eng">
+        <label for="english">English</label><br>
+        <input type="checkbox" name="opt[]" id="science" value="sci">
+        <label for="science">Science</label>
+        <br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
