@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    background-color: lightblue;
+    padding: 10px;
+}
+.Navbar {
+    background-color: black;
+    padding: 10px;
+    display: flex; 
+}
+.Navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 15px;
+    border-right: 1px solid white;
+    line-height: 1.5; 
+
+}
+.Navbar a:hover {
+    background-color: yellow;
+    color: black;
+}
+.Navbar a:last-child {
+    border-right: none;
+}
+.content-box {
+    flex: 1;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    width: 70%;
+    padding: 20px;
+}
+.hero h1 {
+    color: blue;
+    font-weight: bold;
+}
+.sidehero {
+    width: 30%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-left: 2px solid white;
+}
+.sidehero h2 {
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.sidehero p {
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+.page-footer {
+    background-color: lightblue;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;      
+    padding: 10px 20px;
+}
+.page-footer .copyright {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+.side-footer {
+    text-align: center;      
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
