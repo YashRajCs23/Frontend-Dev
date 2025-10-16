@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <style>
+    body {
+      background: #050000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .calculator {
+      background: #000;
+      padding: 20px;
+      border-radius: 20px;
+      width: 320px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .display {
+      background: #000;
+      color: white;
+      font-size: 48px;
+      text-align: right;
+      padding: 10px 20px;
+      border-bottom: 1px solid #444;
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button {
+      flex: 1 0 22%;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      font-size: 24px;
+      color: white;
+      background: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .button.orange {
+      background: orange;
+      color: white;
+    }
+
+    .button.gray {
+      background: #a5a5a5;
+      color: black;
+    }
+
+    .button.zero {
+      flex: 1 0 47%;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="calculator">
+  <div class="display">0</div>
+  <div class="buttons">
+    <div class="button gray">xx</div>
+    <div class="button gray">%</div>
+    <div class="button gray">AC</div>
+    <div class="button orange">÷</div>
+
+    <div class="button">7</div>
+    <div class="button">8</div>
+    <div class="button">9</div>
+    <div class="button orange">×</div>
+
+    <div class="button">4</div>
+    <div class="button">5</div>
+    <div class="button">6</div>
+    <div class="button orange">−</div>
+
+    <div class="button">1</div>
+    <div class="button">2</div>
+    <div class="button">3</div>
+    <div class="button orange">+</div>
+
+    <div class="button zero">0</div>
+    <div class="button">.</div>
+    <div class="button orange">=</div>
+  </div>
+</div>
+
+</body>
+</html>
