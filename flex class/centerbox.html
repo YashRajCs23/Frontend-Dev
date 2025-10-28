@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Center Box Example</title>
+  <style>
+    body { 
+      margin: 0; 
+      font-family: Arial, sans-serif; 
+    }
+    h2 { 
+      text-align: center; 
+      margin-top: 20px; 
+    }
+    .example { 
+      margin-bottom: 50px; 
+      border-top: 2px solid #000; 
+      padding-top: 20px; 
+    }
+
+    /* Method 1: CSS Grid */
+    .container-grid {
+      display: grid;
+      place-items: center;
+      height: 50vh;
+      background-color: #f0f0f0;
+    }
+    .box-grid {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      display: grid;
+      place-items: center;
+      border: 2px solid #333;
+    }
+
+    /* Method 2: Flexbox */
+    .container-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      background-color: #e0e0e0;
+    }
+    .box-flex {
+      width: 200px;
+      height: 100px;
+      background-color: lightgreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="example">
+    <h2>Method 1: Center using CSS Grid (place-items: center)</h2>
+    <div class="container-grid">
+      <div class="box-grid">Centered Box</div>
+    </div>
+  </div>
+
+  <div class="example">
+    <h2>Method 2: Center using Flexbox</h2>
+    <div class="container-flex">
+      <div class="box-flex">Centered Box</div>
+    </div>
+  </div>
+
+</body>
+</html>
