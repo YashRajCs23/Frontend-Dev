@@ -1,0 +1,63 @@
+/* ===== Base Page Style ===== */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f9fb;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* ===== Form Container ===== */
+.styled-form {
+  max-width: 400px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ===== Input, Textarea & Button ===== */
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: 2px solid transparent; /* default outline hidden */
+  transition: all 0.3s ease;
+}
+
+/* ===== Outline Styling ===== */
+/* Add visible outline only on focus */
+input:focus,
+textarea:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 3px;
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

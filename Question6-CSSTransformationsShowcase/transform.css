@@ -1,0 +1,73 @@
+/* ===== Base Page Style ===== */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header & Footer */
+header, footer {
+  background-color: #222;
+  color: white;
+  padding: 15px 0;
+}
+
+/* ===== Flexbox Container for Boxes ===== */
+.transform-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 60px 0;
+}
+
+/* ===== Common Box Style ===== */
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: #3498db;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.4s ease; /* smooth transition */
+  position: relative;
+}
+
+/* Label under each box */
+.label {
+  position: absolute;
+  bottom: -30px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* ===== Transformations (activated on hover) ===== */
+
+/* Rotate */
+.rotate:hover {
+  transform: rotate(45deg);
+  background-color: #9b59b6;
+}
+
+/* Scale */
+.scale:hover {
+  transform: scale(1.3);
+  background-color: #e67e22;
+}
+
+/* Translate */
+.translate:hover {
+  transform: translateY(-30px);
+  background-color: #2ecc71;
+}
+
+/* Skew */
+.skew:hover {
+  transform: skew(20deg, 10deg);
+  background-color: #f39c12;
+}

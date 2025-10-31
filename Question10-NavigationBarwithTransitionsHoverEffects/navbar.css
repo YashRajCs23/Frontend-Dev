@@ -1,0 +1,71 @@
+/* ===== Base Styles ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f6f8;
+}
+
+header {
+  background-color: #222;
+}
+
+/* ===== Navbar Styling ===== */
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  border-bottom: 3px solid #007bff;
+}
+
+.navbar li a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  border-right: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar li a:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Active Link */
+.navbar li a.active {
+  background-color: #0056b3;
+  text-decoration: underline;
+}
+
+/* ===== Responsive Navbar ===== */
+@media (max-width: 700px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li a {
+    border-right: none;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ===== Content & Footer ===== */
+main {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

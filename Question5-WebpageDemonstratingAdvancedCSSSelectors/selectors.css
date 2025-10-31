@@ -1,0 +1,82 @@
+/* ===== General Styling ===== */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+}
+
+/* ===== Attribute Selectors ===== */
+/* Select all input elements with type="text" */
+input[type="text"] {
+  border: 2px solid #3498db;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* Select links starting with "https" */
+a[href^="https"] {
+  color: green;
+  font-weight: bold;
+}
+
+/* Select links starting with "http" (not secure) */
+a[href^="http:"] {
+  color: red;
+  text-decoration: underline;
+}
+
+/* ===== Pseudo-classes ===== */
+/* Hover on link */
+a:hover {
+  color: blueviolet;
+}
+
+/* Focus on input */
+input:focus {
+  outline: 3px solid orange;
+}
+
+/* Style every even list item using :nth-child */
+.color-list li:nth-child(even) {
+  background-color: #e1f5fe;
+}
+
+/* ===== Pseudo-elements ===== */
+/* Add icons before and after list items */
+.color-list li::before {
+  content: "🎨 ";
+}
+.color-list li::after {
+  content: " ✔️";
+}
+
+/* ===== Combinators ===== */
+/* >  direct child selector */
+.parent > p {
+  color: royalblue;
+  font-weight: bold;
+}
+
+/* space — descendant selector */
+.parent div p {
+  color: darkgreen;
+}
+
+/* +  adjacent sibling selector */
+div + p.next {
+  background-color: #ffeb3b;
+}
+
+/* ~  general sibling selector */
+p.next ~ p {
+  color: crimson;
+}

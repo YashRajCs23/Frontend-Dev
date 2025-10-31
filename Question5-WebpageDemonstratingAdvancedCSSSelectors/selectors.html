@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced CSS Selectors Demo</title>
+  <link rel="stylesheet" href="selectors.css">
+</head>
+<body>
+  <header>
+    <h1>Advanced CSS Selectors Demonstration</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>1️⃣ Attribute Selectors</h2>
+      <form>
+        <input type="text" placeholder="Name (type='text')">
+        <input type="email" placeholder="Email (type='email')">
+        <a href="https://example.com">Secure HTTPS Link</a>
+        <a href="http://example.com">Regular HTTP Link</a>
+      </form>
+    </section>
+
+    <section>
+      <h2>2️⃣ Pseudo-classes & Pseudo-elements</h2>
+      <ul class="color-list">
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3️⃣ Combinators</h2>
+      <div class="parent">
+        <p>Direct child paragraph (styled using >)</p>
+        <div>
+          <p>Descendant paragraph (styled using space combinator)</p>
+        </div>
+        <p class="next">This paragraph is next to a div (+ combinator)</p>
+        <p>Paragraph after another paragraph (~ combinator)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 CSS Practice | Advanced Selectors Example</p>
+  </footer>
+</body>
+</html>

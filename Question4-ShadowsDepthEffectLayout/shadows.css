@@ -1,0 +1,66 @@
+/* Base Page Style */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f3f6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header with text-shadow */
+header {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+}
+
+.shadow-title {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Container using Flexbox */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+/* Common Card Style */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+  width: 250px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Different Shadow Levels */
+.card1 {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card2 {
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card3 {
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover Lift Effect */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
