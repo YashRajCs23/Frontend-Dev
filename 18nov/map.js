@@ -6,7 +6,6 @@ let arr=[10,3,5,4,6,2,3,5,7,5];
 //         console.log(arr[index]);
         
 //     }
-    
 // }
 // let element=0;
 // for (let index = 0; index < arr.length; index++) {

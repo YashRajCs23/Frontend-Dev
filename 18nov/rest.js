@@ -4,7 +4,6 @@ const user={
     city:"New York",
     country:"USA"
 }
-
 const {name,...others}=user;
 console.log(name);
 console.log(others);

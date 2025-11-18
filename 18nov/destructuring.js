@@ -6,7 +6,6 @@ const user={
         console.log("fn called");
     }
 }
-
 //without destructuring
 const name1=user.name;
 const age1=user.age;

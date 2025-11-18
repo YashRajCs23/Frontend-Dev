@@ -13,5 +13,4 @@ const ans = students.reduce((acc, curr) => {
 
     return acc;
 }, {});
-
 console.log(ans);

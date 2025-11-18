@@ -7,7 +7,6 @@ let user = {
 console.log(typeof user);
 console.log(user);
 
-
 let jsonData = `{
   "name": "Aakash",
   "age": 22,
